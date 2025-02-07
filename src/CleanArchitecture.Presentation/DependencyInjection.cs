@@ -73,7 +73,7 @@ public static class DependencyInjection
         {
           ValidateAudience = false,
         };
-      })
+      });
       //.AddGoogle(options =>
       //{
       //  options.ClientId = config["Authentication:Google:ClientId"]!;
