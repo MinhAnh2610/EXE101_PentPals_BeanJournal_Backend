@@ -74,12 +74,12 @@ public static class DependencyInjection
           ValidateAudience = false,
         };
       })
-      .AddGoogle(options =>
-      {
-        options.ClientId = config["Authentication:Google:ClientId"]!;
-        options.ClientSecret = config["Authentication:Google:ClientSecret"]!;
-        options.CallbackPath = "/signin-google";
-      });
+      //.AddGoogle(options =>
+      //{
+      //  options.ClientId = config["Authentication:Google:ClientId"]!;
+      //  options.ClientSecret = config["Authentication:Google:ClientSecret"]!;
+      //  options.CallbackPath = "/signin-google";
+      //});
 
     services.AddAuthorization(options =>
     {
