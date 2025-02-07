@@ -8,4 +8,5 @@ public class User : IdentityUser
   public bool Gender { get; set; } = true;
   public string? RefreshToken { get; set; }
   public DateTime? RefreshTokenExpiration { get; set; }
+  public List<Entry> Entries { get; set; } = new List<Entry>();
 }
